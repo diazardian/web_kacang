@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-+=sg))pbnfg8es98!^2e-7edhxvvft9ofdmph56@m!534x#t80
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.76.42.232']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "kacang",
+    "web_kacang",
     "discordbot",
     "rest_framework",
 ]
@@ -135,8 +136,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
-
-STATICFILES_DIRS = BASE_DIR / "static",
+STATIC_ROOT = BASE_DIR / 'static'
+#STATICFILES_DIRS = BASE_DIR / "static",
 
 
 # Default primary key field type
